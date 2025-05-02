@@ -133,6 +133,20 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17048694370');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17048694370/7KQJCKihg8aEOLcuecE',
+        'transaction_id': '',
+        'event_callback': callback
+      });
+      return false;
+    }
   </script>
 </head>
 <body>
@@ -144,8 +158,11 @@
     <h1>Get Stronger Nails & Clearer Skin - Fast</h1>
     <img src="./introducting_kerassentials-new.png" alt="Kerassentials" class="product-img">
 
-    <a href="https://www.checkout-ds24.com/redir/533765/marloonbfss/" target="_blank" class="cta-btn">
-      BUY NOW - Limited Offer
+    <a href="https://www.checkout-ds24.com/redir/533765/marloonbfss/" 
+       onclick="return gtag_report_conversion(this.href);" 
+       target="_blank" 
+       class="cta-btn">
+       BUY NOW - Limited Offer
     </a>
 
     <div class="urgency">
@@ -178,16 +195,6 @@
       <img src="./certifications.png" alt="Certifications">
     </div>
   </div>
-
-  <!-- Google Ads Conversion Tracking on CTA Click -->
-  <script>
-    document.querySelector('.cta-btn').addEventListener('click', function() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17048694370/7KQJCKihg8aEOLcuecE',
-        'transaction_id': ''
-      });
-    });
-  </script>
 
   <footer>
     &copy; 2025 Kerassentials™ - All Rights Reserved
