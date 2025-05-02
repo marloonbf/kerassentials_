@@ -32,19 +32,45 @@
       text-align: center;
     }
     h1 {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      color: #1a202c;
     }
     .product-img {
-      max-width: 220px;
-      margin: 12px auto;
+      max-width: 240px;
+      margin: 14px auto;
       display: block;
+    }
+    .cta-btn {
+      display: block;
+      background: #ff5a1f;
+      color: #fff;
+      font-weight: 800;
+      padding: 16px;
+      font-size: 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 24px;
+      transition: background 0.3s ease;
+    }
+    .cta-btn:hover {
+      background: #e2511b;
+    }
+    .urgency {
+      background-color: #fef3c7;
+      color: #92400e;
+      font-weight: 700;
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 24px;
+      font-size: 15px;
     }
     .features {
       text-align: left;
       font-size: 16px;
-      margin: 20px 0;
+      margin: 24px 0;
+      padding-left: 0;
     }
     .features li {
       margin-bottom: 10px;
@@ -59,46 +85,37 @@
       color: #10b981;
       font-weight: bold;
     }
-    .cta-btn {
-      display: block;
-      background: #f97316;
-      color: #fff;
-      font-weight: 800;
-      padding: 14px;
-      font-size: 18px;
-      border-radius: 10px;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: background 0.3s ease;
-    }
-    .cta-btn:hover {
-      background: #ea580c;
-    }
-    .urgency {
-      background-color: #fef3c7;
-      color: #92400e;
-      font-weight: 700;
-      padding: 10px;
-      border-radius: 8px;
-      margin-top: 20px;
-      font-size: 15px;
-    }
-    .ingredients {
+    .ingredients, .testimonials, .guarantee {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 16px;
-      margin-top: 20px;
+      margin-top: 24px;
     }
-    .ingredients img {
+    .ingredients img, .testimonials img, .guarantee img {
       width: 100px;
     }
     .certifications {
-      margin-top: 20px;
+      margin-top: 24px;
     }
     .certifications img {
       width: 100%;
       max-width: 300px;
+    }
+    .testimonial-box {
+      background: #f0fdf4;
+      border-left: 4px solid #10b981;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+      border-radius: 8px;
+    }
+    .guarantee-box {
+      background: #e0f2fe;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+      border-radius: 8px;
     }
     footer {
       text-align: center;
@@ -110,14 +127,13 @@
   </style>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17027680669"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17027680669');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17027680669"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17027680669');
+  </script>
 </head>
 <body>
   <header>
@@ -147,6 +163,15 @@
       <img src="./ingredient1.png" alt="Natural Oil 1">
       <img src="./ingredient2.png" alt="Natural Oil 2">
       <img src="./ingredient3.png" alt="Natural Oil 3">
+    </div>
+
+    <div class="testimonial-box">
+      “After just 3 weeks of using Kerassentials, I saw a massive difference. My nails are stronger and healthier than ever! ” – <strong>Maria J.</strong>
+    </div>
+
+    <div class="guarantee-box">
+      👉 <strong>60-Day Money-Back Guarantee!</strong><br>
+      Try it risk-free. If you’re not satisfied, get your money back - no questions asked.
     </div>
 
     <div class="certifications">
